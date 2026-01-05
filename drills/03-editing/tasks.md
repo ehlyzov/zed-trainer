@@ -4,14 +4,16 @@
 
 ### Tasks
 
-1. Open `RefactorMe.kt`.
-   - Duplicate the function `computeSum` and rename it to `computeSumCopy`.
-   - Move the duplicated function below the `computeProduct` function.
-   - Delete the commented `// unused` line.
-2. Open `FormattingMe.kt`.
-   - Join the lines in the `greeting` string so that the entire sentence sits on one line.
-   - Split the long declaration of `numbers` into three separate lines, one number per line.
-3. In both files, practise indenting and outdenting blocks using keyboard shortcuts only.
+1. Open `RefactorMe.kt` (`Cmd-P`).
+   - Duplicate the function `computeSum` and rename it to `computeSumCopy` (select the block with `x` + `j`, `y`, `p`, then rename with `e`, `b`, `c`).
+   - Move the duplicated function below the `computeProduct` function (select block, `d`, move, `p`).
+   - Delete the commented `// unused` line (`x`, `d`).
+2. Open `FormattingMe.kt` (`Cmd-P`).
+   - Join the lines in the `greeting` string so that the entire sentence sits on one line (select lines with `3x`, then `J`).
+   - Split the long declaration of `numbers` into three separate lines, one number per line (use `f,`, `a`, `Enter`, then repeat with `.`).
+3. In both files, practise indenting and outdenting blocks using keyboard shortcuts only (`>` and `<`).
+4. Toggle a line comment in either file (`Ctrl-c`).
+5. Undo and redo at least one change (`u` and `U`).
 
 ### Stretch
 

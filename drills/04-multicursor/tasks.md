@@ -4,19 +4,24 @@
 
 ### Tasks
 
-1. Open `RenameMe.kt`.
-   - Place the cursor on the first occurrence of `tempValue`.
-   - Add cursors to the next two occurrences of `tempValue`.
-   - Rename all three occurrences to `intermediate` in one go.
-   - Use multi‑cursor navigation to insert a comment at the end of each renamed line.
-2. Open `Constants.kt`.
-   - Select the first occurrence of `PI_VALUE`.
-   - Use the “select next occurrence” shortcut to add cursors to all remaining occurrences of `PI_VALUE`.
-   - Rename them to `PI` simultaneously.
+1. Open `RenameMe.kt` (`Cmd-P`).
+   - Select all exact `tempValue` occurrences (`%`, then `s` and type `\btempValue\b`).
+   - Rename all selections to `intermediate` (`c`).
+   - Append a comment at the end of each affected line (`A`, type comment, `Esc`).
+2. Open `Constants.kt` (`Cmd-P`).
+   - Select all exact `PI_VALUE` occurrences (`%`, then `s` and type `\bPI_VALUE\b`).
+   - Rename them to `PI` simultaneously (`c`).
+3. Open `Scoreboard.kt` (`Cmd-P`).
+   - Place the cursor on the first score number.
+   - Duplicate the cursor to the next lines with `C` until all rows have cursors (use `Alt-C` once to practise adding above).
+   - Append ` pts` to every row (`A`, type ` pts`, `Esc`).
+   - Remove a single cursor with `,`, then bring it back with `C`.
+   - Cycle the primary selection (`)` and `(`), then remove it (`Alt-,`).
+   - Select all rows (`5x`), then use `s` with `\b\d+\b` to select all scores and increment them with `Ctrl-a`.
 
 ### Stretch
 
-Use multi‑cursor editing to convert the list of numbers in `Constants.kt` into a list of strings (e.g. `1` → `"1"`) without leaving multi‑cursor mode.
+Use multi‑cursor editing to convert the list of numbers in `Constants.kt` into a list of strings (e.g. `1` → `"1"`) without leaving multi‑cursor mode (`x` to select the line, `s` with `\b\d+\b`, then `i"` and `a"`).
 
 ### Forbidden
 

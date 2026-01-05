@@ -25,7 +25,11 @@ zed_repo/
 │   ├── 03-editing/        # Editing and structural changes
 │   ├── 04-multicursor/    # Multi‑cursor practice
 │   ├── 05-search-replace/ # Search and replace tasks
-│   └── 06-pane-workflow/  # Working with multiple panes
+│   ├── 06-pane-workflow/  # Working with multiple panes
+│   ├── 07-macros-registers/ # Macros, registers, repeat chains
+│   ├── 08-multifile-refactor/ # Multi-file refactoring with LSP
+│   └── 09-pane-keybindings/ # Zed pane keybinding practice
+├── Helix-Cheatsheet.md    # Helix/Zed keybinding reference
 └── templates/
     └── daily-entry.md     # Template for daily notes
 ```

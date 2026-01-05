@@ -4,16 +4,16 @@
 
 ### Tasks
 
-1. Open `Occurrences.kt`.
-   - Search for the string `PLACEHOLDER` and count how many matches there are.
-   - Replace the **second** occurrence only with `REPLACED`.
-   - Undo the change and then replace **all** occurrences of `PLACEHOLDER` with `value` using a replace command with confirmation enabled.
-2. Perform an in‑file search for the number `42` and navigate to each occurrence using keyboard shortcuts.
-3. Use search in the Command Palette to find the action for “Find in Files” and note its keybinding.
+1. Open `Occurrences.kt` (`Cmd-P`).
+   - Search for the string `PLACEHOLDER` and count how many matches there are (`/PLACEHOLDER`, `n` and `N`).
+   - Replace the **second** occurrence only with `REPLACED` (`/PLACEHOLDER`, `n`, `c`).
+   - Undo the change and then replace **all** occurrences of `PLACEHOLDER` with `value` (`u`, `%`, `s`, `\bPLACEHOLDER\b`, `c`).
+2. Perform an in‑file search for the number `42` and navigate to each occurrence (`/42`, `n` and `N`).
+3. Use search in the Command Palette to find the action for “Find in Files” and note its keybinding (`Cmd-Shift-P`, then `Cmd-Shift-F`).
 
 ### Stretch
 
-Use a regular expression search (if supported in your environment) to find all numeric literals and wrap them in parentheses (e.g. `5` → `(5)`).  Perform replacements one at a time to avoid unintended matches.
+Use a regular expression search to find all numeric literals and wrap them in parentheses (e.g. `5` → `(5)`) (`/\b\d+\b`, `n`, `c`). Perform replacements one at a time to avoid unintended matches.
 
 ### Forbidden
 
